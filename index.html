@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Introduction Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #intro-text {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        #next-page-link {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        #next-page-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Self-Introduction Page</h1>
+    <p id="intro-text">나를 소개하는 홈페이지입니다.</p>
+    <a id="next-page-link" href="#intro">자기소개 보러 가기</a>
+
+    <div id="intro" style="display: none;">
+        <h2>Self-Introduction by ChatGPT</h2>
+        <div id="intro-text">
+            <p>안녕하세요! 저는  이종수입니다. 저를 소개해드리겠습니다.</p>
+            <p>고촌고등학교 10반 23번이고 취미는 영화보기입니다.</p>
+        </div>
+    </div>
+
+    <script>
+        // 페이지 내에서 다음 페이지로 이동하는 링크 클릭 시 보여줄 부분을 토글합니다.
+        document.getElementById("next-page-link").addEventListener("click", function() {
+            document.getElementById("intro").style.display = "block";
+            document.getElementById("intro-text").style.display = "none";
+        });
+    </script>
+</body>
+</html>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        /* 배경 이미지 URL을 여기에 추가하세요 */
+        background-image: url('bg.jpg');
+        /* 배경 이미지 크기를 조정하거나 반복 여부를 설정할 수 있습니다 */
+        background-size: cover; /* 배경 이미지가 화면에 가득 차도록 크기 조정 */
+        background-repeat: no-repeat; /* 배경 이미지 반복 방지 */
+    }
+    /* 이하 생략 */
+</style>
+
